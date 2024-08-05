@@ -5,73 +5,46 @@ import { ProjectsHTMLeCSS } from "../ProjectCard/projectCardHTMLeCSS";
 import colorSharp2 from "../../assets/img/color-sharp2.png"
 // REACT
 
-import helloWorld from '../../assets/img-projects/19/capa.png'
-import loginForm from '../../assets/img-projects/20/capa.png'
-import styledComponents from '../../assets/img-projects/8/capa.png'
+import ServicesRequest from '../../assets/img-projects/1/capa.png'
 // JS
 
-import aluraPlay from '../../assets/img-projects/12/capa.png'
-import ttBank from '../../assets/img-projects/13/capa.png'
-import hypotenuse from '../../assets/img-projects/21/capa.png'
+
 //HTML E CSS
-import starbucks from '../../assets/img-projects/22/capa.png'
-import ajax from '../../assets/img-projects/23/capa.png'
+
 
 export const Projects = ({ isOriginalText }) => {
     const projectsExcel = [
         {
-            title: "Alura Play",
-            description: "Learning how to create requests.",
-            imgUrl: aluraPlay,
-            link: "https://alura-play-sandy.vercel.app/index.html"
-        },
-        {
-            title: "TtBank",
-            description: "Validating data through a bank account form.",
-            imgUrl: ttBank,
-            link: "https://tt-bank.vercel.app/"
-        },
-        {
-            title: "Calculate the Hypotenuse",
-            description: '',
-            imgUrl: hypotenuse,
-            link: "https://calculate-a-hypotenuse.vercel.app/"
+            title: "Services Request",
+            description: "Services Request",
+            imgUrl: ServicesRequest,
+            link: "https://app.powerbi.com/view?r=eyJrIjoiZGNmMDkwMGEtYzk2OC00YmZjLWJhMjQtZTExMDhhMTQwY2E0IiwidCI6ImU4ZDY4ZTVhLTkxYjMtNDFiNy04NDVhLTNhYzNhNzMyMGJkNCJ9"
         },
     ];
     const projectsPowerBi = [
         {
-            title: "Hello world!",
-            description: "My first portfolio made in React.",
-            imgUrl: helloWorld,
-            link: "https://ola-mundo-two.vercel.app/"
-        },
-        {
-            title: "Login Form",
-            description: "Junior React Developer Job Test",
-            imgUrl: loginForm,
-            link: "https://desafio-jr-react-5k8j.vercel.app/"
-        },
-        {
-            title: "Styled Components",
-            description: "Learn how to write CSS code within JavaScript.",
-            imgUrl: styledComponents,
-            link: "https://styled-components-self.vercel.app/"
+            title: "Services Request",
+            description: "Services Request",
+            imgUrl: ServicesRequest,
+            link: "https://app.powerbi.com/view?r=eyJrIjoiZGNmMDkwMGEtYzk2OC00YmZjLWJhMjQtZTExMDhhMTQwY2E0IiwidCI6ImU4ZDY4ZTVhLTkxYjMtNDFiNy04NDVhLTNhYzNhNzMyMGJkNCJ9"
         },
     ];
     const projectsPython = [
         {
-            title: "Starbucks Project",
-            description: "",
-            imgUrl: starbucks,
-            link: "https://starbucks-project-nine.vercel.app/"
-        },
-        {
-            title: "Ajax Project",
-            description: "",
-            imgUrl: ajax,
-            link: "https://p-rojeto-ajax.vercel.app/"
+            title: "Services Request",
+            description: "Services Request",
+            imgUrl: ServicesRequest,
+            link: "https://app.powerbi.com/view?r=eyJrIjoiZGNmMDkwMGEtYzk2OC00YmZjLWJhMjQtZTExMDhhMTQwY2E0IiwidCI6ImU4ZDY4ZTVhLTkxYjMtNDFiNy04NDVhLTNhYzNhNzMyMGJkNCJ9"
         },
     ];
+    const projectsProgramação = [
+        {
+            title: "Services Request",
+            description: "Services Request",
+            imgUrl: ServicesRequest,
+            link: "https://app.powerbi.com/view?r=eyJrIjoiZGNmMDkwMGEtYzk2OC00YmZjLWJhMjQtZTExMDhhMTQwY2E0IiwidCI6ImU4ZDY4ZTVhLTkxYjMtNDFiNy04NDVhLTNhYzNhNzMyMGJkNCJ9"
+        },
+    ]
 
     const title = isOriginalText ? "Projects" : "Projetos";
     const description = isOriginalText 
@@ -86,7 +59,7 @@ export const Projects = ({ isOriginalText }) => {
                         <h2>{title}</h2>
                         <p>
                             {description}
-                            <a className="project-link2" href="Home" rel="noreferrer" target="_blank">
+                            <a className="project-link2" href="https://github.com/ElivanLimaJunior" rel="noreferrer" target="_blank">
                                 <em>GitHub</em>
                             </a>
                         </p>
@@ -100,6 +73,9 @@ export const Projects = ({ isOriginalText }) => {
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">Python</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="fourth">Programação</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
@@ -137,6 +113,20 @@ export const Projects = ({ isOriginalText }) => {
                                             projectsPython.map((project, index) => {
                                                 return (
                                                     <ProjectsHTMLeCSS
+                                                        key={index}
+                                                        {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="fourth">
+                                    <Row>
+                                        {
+                                            projectsProgramação.map((project, index) => {
+                                                return (
+                                                    <ProjectCardJS
                                                         key={index}
                                                         {...project}
                                                     />

@@ -40,8 +40,9 @@ export const NavBar = ({ isOriginalText, handleChangeText  }) => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>{isOriginalText ? 'Home' : 'Início'}</Nav.Link>
-                        <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>{isOriginalText ? 'Skills' : 'Habilidades'}</Nav.Link>
-                        <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>{isOriginalText ? 'Projects' : 'Projetos'}</Nav.Link>
+                        <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>{isOriginalText ? 'Projects' : 'Projetos'}</Nav.Link>
+                        <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>{isOriginalText ? 'Certifications' : 'Certificados'}</Nav.Link>
+                        <Nav.Link href="#About-me" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>{isOriginalText ? 'About me' : 'Sobre mim'}</Nav.Link>
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">

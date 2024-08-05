@@ -1,10 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../../assets/img/meter1.svg";
-import meter2 from "../../assets/img/meter2.svg";
-import meter3 from "../../assets/img/meter3.svg";
 import colorSharp from "../../assets/img/color-sharp.png";
+import excelSvg from "../../assets/img/excelSvg.svg"
+import powerBiSvg from "../../assets/img/powerBiSvg.svg"
+import pythonSvg from "../../assets/img/pythonSvg.svg"
+import programaçãoSvg from "../../assets/img/programaçãoSvg.svg"
 
 export const Skills = ({ isOriginalText }) => {
     const responsive = {
@@ -41,20 +42,20 @@ export const Skills = ({ isOriginalText }) => {
                             <p>{description}</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Excel" />
+                                    <img src={excelSvg} alt="Excel" />
                                     <h5>Excel</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Power BI" />
+                                    <img src={powerBiSvg} alt="Power BI" />
                                     <h5>Power BI</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Python" />
+                                    <img src={pythonSvg} alt="Python" />
                                     <h5>Python</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="SQL" />
-                                    <h5>SQL</h5>
+                                    <img src={programaçãoSvg} alt="Programação em geral" />
+                                    <h5>Programação em geral</h5>
                                 </div>
                             </Carousel>
                         </div>
