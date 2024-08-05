@@ -2,7 +2,6 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCardJS } from "../ProjectCard/projectCardJS";
 import { ProjectCardReact } from "../ProjectCard/projectCardReact";
 import { ProjectsHTMLeCSS } from "../ProjectCard/projectCardHTMLeCSS";
-import colorSharp2 from "../../assets/img/color-sharp2.png"
 // REACT
 
 import ServicesRequest from '../../assets/img-projects/1/capa.png'
@@ -18,15 +17,15 @@ export const Projects = ({ isOriginalText }) => {
             title: "Services Request",
             description: "Services Request",
             imgUrl: ServicesRequest,
-            link: "https://app.powerbi.com/view?r=eyJrIjoiZGNmMDkwMGEtYzk2OC00YmZjLWJhMjQtZTExMDhhMTQwY2E0IiwidCI6ImU4ZDY4ZTVhLTkxYjMtNDFiNy04NDVhLTNhYzNhNzMyMGJkNCJ9"
+            link: null
         },
     ];
     const projectsPowerBi = [
         {
-            title: "Services Request",
-            description: "Services Request",
+            title: "Gestão De Manutenção Com Power Bi",
+            description: "Evento online ministrado pela Maintenance intelligence",
             imgUrl: ServicesRequest,
-            link: "https://app.powerbi.com/view?r=eyJrIjoiZGNmMDkwMGEtYzk2OC00YmZjLWJhMjQtZTExMDhhMTQwY2E0IiwidCI6ImU4ZDY4ZTVhLTkxYjMtNDFiNy04NDVhLTNhYzNhNzMyMGJkNCJ9"
+            link: null
         },
     ];
     const projectsPython = [
@@ -34,15 +33,15 @@ export const Projects = ({ isOriginalText }) => {
             title: "Services Request",
             description: "Services Request",
             imgUrl: ServicesRequest,
-            link: "https://app.powerbi.com/view?r=eyJrIjoiZGNmMDkwMGEtYzk2OC00YmZjLWJhMjQtZTExMDhhMTQwY2E0IiwidCI6ImU4ZDY4ZTVhLTkxYjMtNDFiNy04NDVhLTNhYzNhNzMyMGJkNCJ9"
+            link: null
         },
     ];
-    const projectsProgramação = [
+    const Outros = [
         {
             title: "Services Request",
             description: "Services Request",
             imgUrl: ServicesRequest,
-            link: "https://app.powerbi.com/view?r=eyJrIjoiZGNmMDkwMGEtYzk2OC00YmZjLWJhMjQtZTExMDhhMTQwY2E0IiwidCI6ImU4ZDY4ZTVhLTkxYjMtNDFiNy04NDVhLTNhYzNhNzMyMGJkNCJ9"
+            link: "#"
         },
     ]
 
@@ -75,7 +74,7 @@ export const Projects = ({ isOriginalText }) => {
                                     <Nav.Link eventKey="third">Python</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="fourth">Programação</Nav.Link>
+                                    <Nav.Link eventKey="fourth">Outros</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
@@ -124,7 +123,7 @@ export const Projects = ({ isOriginalText }) => {
                                 <Tab.Pane eventKey="fourth">
                                     <Row>
                                         {
-                                            projectsProgramação.map((project, index) => {
+                                            Outros.map((project, index) => {
                                                 return (
                                                     <ProjectCardJS
                                                         key={index}
@@ -140,7 +139,6 @@ export const Projects = ({ isOriginalText }) => {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2}></img>
         </section>
     )
 }

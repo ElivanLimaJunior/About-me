@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../assets/img/about-me.jpeg';
+import logo from '../../assets/img/about-me5.png';
 
 export const AbouteMe = ({ isOriginalText }) => {
     const title = isOriginalText ? "Sobre Mim" : "About Me";
@@ -21,7 +21,6 @@ export const AbouteMe = ({ isOriginalText }) => {
                 </div>
                 <div className="text-section">
                     <h1>{title}</h1>
-                    <br></br>
                     <p>{description1}</p>
                     <br></br>
                     <p>{description2}</p>
