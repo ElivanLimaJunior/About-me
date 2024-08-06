@@ -26,7 +26,7 @@ export const Footer = () => {
               </a>
             </div>
             <p className="mb-0" style={{ fontSize: '0.9rem', color: '#6c757d' }}>
-              Copyright 2024. &copy; Todos os direitos reservados.
+            Copyright 2024. © Todos os direitos reservados.
             </p>
           </Col>
         </Row>
