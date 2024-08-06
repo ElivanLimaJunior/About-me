@@ -71,7 +71,7 @@ export const NavBar2 = ({ isOriginalText, handleChangeText }) => {
                             <a href="https://www.facebook.com/thayna.thauany/" target="_blank" rel="noreferrer"><img src={navIcon2} alt='' /></a>
                         </div>
                         <button className="vvd" onClick={handleChangeText}>
-                            <span>{isOriginalText ? "Em Português" : "In English"}</span>
+                            <span>{isOriginalText ? "In English" : "Em português"}</span>
                             <img src={translate2} alt="translate" style={{ width: '20px', height: '20px', marginLeft: '20px' }} />
                         </button>
                     </span>
