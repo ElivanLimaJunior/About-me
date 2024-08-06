@@ -15,9 +15,9 @@ export const Banner = ({ isOriginalText, handleChangeText }) => {
         ? 'I have a degree in Administration and studied Systems Analysis and Development for 2 years, with the intention of finishing the course. I am currently studying Production Engineering. I have a passion for working with data and I like to demonstrate how it can help in decision making. I am focused on becoming an efficient data analyst ready for the job market.'
         : 'Sou formado em Administração e cursei Análise e Desenvolvimento de Sistemas por 2 anos, com a intenção de finalizar o curso. Atualmente, estou cursando Engenharia de Produção. Tenho uma paixão por trabalhar com dados e gosto de demonstrar como eles podem auxiliar na tomada de decisões. Estou focado em me tornar um analista de dados eficiente e pronto para o mercado de trabalho.';
 
-    const tagline = isOriginalText ? 'Welcome to my Portfolio' : 'Bem-vindo ao meu Portfólio';
-    const headerText = isOriginalText ? "Hi! I'm Elivan!" : "Olá! Eu sou Elivan!";
-    const buttonText = isOriginalText ? "Em Português" : "Em Inglês";
+    const tagline = isOriginalText ? "Welcome to my Portfolio" : "Bem-vindo ao meu Portfólio";
+    const headerText = isOriginalText ? "Hi! I'm Elivan!" : "Olá! Eu sou Elivan!" ;
+    const buttonText = isOriginalText ? "Em Português" : "Em Inglês" ;
     
 
     useEffect(() => {

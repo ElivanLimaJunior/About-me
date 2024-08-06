@@ -45,10 +45,10 @@ export const Projects = ({ isOriginalText }) => {
         },
     ]
 
-    const title = isOriginalText ? "Projects" : "Projetos";
+    const title = isOriginalText ? "Projetos" : "Projects";
     const description = isOriginalText 
-        ? "Here you can find my main projects. The code for all of them is on my " 
-        : "Aqui você pode encontrar meus principais projetos. O código de todos eles está no meu ";
+        ? "Aqui você pode encontrar meus principais projetos." 
+        : "Here you can find my main projects.";
 
     return (
         <section className="project" id="project">
@@ -59,7 +59,7 @@ export const Projects = ({ isOriginalText }) => {
                         <p>
                             {description}
                             <a className="project-link2" href="https://github.com/ElivanLimaJunior" rel="noreferrer" target="_blank">
-                                <em>GitHub</em>
+                                <em></em>
                             </a>
                         </p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">

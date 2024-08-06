@@ -290,10 +290,10 @@ export const Certificados = ({ isOriginalText }) => {
         },        
     ]
 
-    const title = isOriginalText ? "Certifications" : "Certificados";
+    const title = isOriginalText ? "Certificados" : "Certifications";
     const description = isOriginalText 
-        ? "Here you can find my certifications." 
-        : "Aqui você encontra minhas certificações.";
+        ? "Aqui você encontra minhas certificações."
+        : "Here you can find my certifications.";
 
     return (
         <section className="project" id="project">
@@ -313,13 +313,13 @@ export const Certificados = ({ isOriginalText }) => {
                                     <Nav.Link eventKey="first">Data Science</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Web</Nav.Link>
+                                    <Nav.Link eventKey="second">Desenv. Web</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">Gestão e inovação</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="fourth">Outros</Nav.Link>
+                                    <Nav.Link eventKey="fourth">Outros Cursos</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
