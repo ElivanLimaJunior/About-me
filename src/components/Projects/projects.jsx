@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCardJS } from "../ProjectCard/projectCardJS";
-import { ProjectCardReact } from "../ProjectCard/projectCardReact";
-import { ProjectsHTMLeCSS } from "../ProjectCard/projectCardHTMLeCSS";
+import { ProjectCardJS } from "./ProjectCard/projectCardJS";
+import { ProjectCardReact } from "./ProjectCard/projectCardReact";
+import { ProjectsHTMLeCSS } from "./ProjectCard/projectCardHTMLeCSS";
 // REACT
 
 import ServicesRequest from '../../assets/img-projects/1/capa.png'
