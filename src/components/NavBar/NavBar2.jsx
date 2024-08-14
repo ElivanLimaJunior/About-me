@@ -68,7 +68,7 @@ export const NavBar2 = ({ isOriginalText, handleChangeText }) => {
                             <a href="https://www.instagram.com/ei.elivan/" target="_blank" rel="noreferrer">
                                 <img src={navIcon3} alt="" />
                             </a>
-                            <a href="https://www.facebook.com/thayna.thauany/" target="_blank" rel="noreferrer"><img src={navIcon2} alt='' /></a>
+                            <a href="https://github.com/ElivanLimaJunior/" target="_blank" rel="noreferrer"><img src={navIcon2} alt='' /></a>
                         </div>
                         <button className="vvd" onClick={handleChangeText}>
                             <span>{isOriginalText ? "In English" : "Em português"}</span>
