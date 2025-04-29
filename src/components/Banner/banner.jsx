@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from '../../assets/img/header-img.svg';
+import headerImg from '../../assets/img/header-DataScience.png';
 
 export const Banner = ({ isOriginalText, handleChangeText }) => {
     const [loopNum, setLoopNum] = useState(0);
@@ -12,8 +12,9 @@ export const Banner = ({ isOriginalText, handleChangeText }) => {
     const period = 2000;
 
     const paragraphText = isOriginalText
-        ? 'Sou formado em Administração e cursei Análise e Desenvolvimento de Sistemas por 2 anos, com a intenção de finalizar o curso. Atualmente, estou cursando Engenharia de Produção. Tenho uma paixão por trabalhar com dados e gosto de demonstrar como eles podem auxiliar na tomada de decisões. Estou focado em me tornar um analista de dados eficiente e pronto para o mercado de trabalho.'
-        : 'I have a degree in Administration and studied Systems Analysis and Development for 2 years, with the intention of finishing the course. I am currently studying Production Engineering. I have a passion for working with data and I like to demonstrate how it can help in decision making. I am focused on becoming an efficient data analyst ready for the job market.';
+        ? 'Sou formado em Administração, cursei Análise e Desenvolvimento de Sistemas por dois anos e atualmente estou cursando Engenharia de Produção. Tenho grande paixão por dados, automação e tecnologia, e estou focado em construir soluções que apoiem a tomada de decisões. Meu objetivo é atuar na área de dados, utilizando ferramentas como Power BI, Excel e projetos de Data Science para gerar valor e inovação.'
+        : 'I have a degree in Administration, studied Systems Analysis and Development for two years, and I am currently pursuing a degree in Production Engineering. I am passionate about data, automation, and technology, and I am focused on building solutions that support decision-making. My goal is to work as a data analyst, using tools like Power BI, Excel, and Data Science projects to deliver value and innovation.';
+
 
     const tagline = isOriginalText ? "Bem-vindo ao meu Portfólio" : "Welcome to my Portfolio";
     const headerText = isOriginalText ? "Olá! Eu sou Elivan!" : "Hi! I'm Elivan!";
@@ -52,7 +53,7 @@ export const Banner = ({ isOriginalText, handleChangeText }) => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">{tagline}</span>
-                        <h1>{headerText}<br /> <span className="wrap">{text}</span></h1>
+                        <h1>{headerText}<br /> <span className="wrap">{text || "|"}</span></h1>
                         <p>{paragraphText}</p>
                         <button onClick={handleChangeText}>{buttonText} <ArrowRightCircle size={25} /></button>
                     </Col>

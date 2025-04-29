@@ -4,14 +4,16 @@ import logo from '../../assets/img/about-me5.png';
 export const AbouteMe = ({ isOriginalText }) => {
     const title = isOriginalText ? "Sobre Mim" : "About Me";
     const description1 = isOriginalText 
-        ? "Olá! Meu nome é Elivan e sou um entusiasta da tecnologia, apaixonado por trabalhar com dados e automação de processos. Estou atualmente cursando Engenharia de Produção e me preparando para um futuro promissor na Indústria 4.0."
-        : "Hello! My name is Elivan and I am a technology enthusiast, passionate about working with data and its applications. My goal is to become an efficient data analyst and help companies make informed decisions based on concrete data.";
+        ? "Olá! Meu nome é Elivan e sou apaixonado por dados, automação de processos e tecnologia. Estou cursando Engenharia de Produção e estou focado em construir uma carreira sólida em Análise de Dados, Ciência de Dados e soluções para a Indústria 4.0."
+        : "Hello! My name is Elivan and I am passionate about data, process automation, and technology. I am currently studying Production Engineering and focusing on building a strong career in Data Analysis, Data Science, and Industry 4.0 solutions.";
+
     const description2 = isOriginalText 
-        ? "Minha formação em Administração e os dois anos de Análise e Desenvolvimento de Sistemas me proporcionaram uma base sólida, e, ao conseguir uma bolsa para Engenharia de Produção, abracei essa oportunidade de crescimento. Meu objetivo é me tornar um analista eficiente, capaz de auxiliar as empresas a tomar decisões informadas por meio da análise de dados concretos."
-        : "I am always learning and developing in the areas of data analysis and programming. Currently, I am studying Production Engineering and have experience in Python, React, and JavaScript.";
-    const description3 = isOriginalText 
-        ? "Decidi criar este portfólio para compartilhar meus estudos e as tecnologias que estou atualmente aprendendo. Nele, você encontrará os projetos que já realizei ou nos quais participei, refletindo minha jornada de aprendizado e desenvolvimento."
-        : "When I'm not working or studying, I like to spend time at the gym and exercise at home.";
+        ? "Minha formação em Administração, combinada com meus estudos em Análise e Desenvolvimento de Sistemas e Engenharia de Produção, me proporcionaram uma visão ampla e prática dos negócios e da tecnologia. Hoje, meu objetivo é transformar dados em insights estratégicos para impulsionar decisões inteligentes e gerar valor para as empresas."
+        : "My background in Business Administration, combined with my studies in Systems Analysis and Production Engineering, has given me a broad and practical understanding of business and technology. Today, my goal is to turn data into strategic insights to drive smart decisions and generate value for companies.";
+    
+        const description3 = isOriginalText 
+        ? "Criei este portfólio para apresentar meus projetos em Power BI, Excel, Python e Data Science, refletindo minha evolução profissional. Aqui, compartilho as soluções que desenvolvi e os conhecimentos que venho adquirindo nessa jornada de constante aprendizado e inovação."
+        : "I created this portfolio to showcase my projects in Power BI, Excel, and Data Science, reflecting my professional growth. Here, I share the solutions I have developed and the knowledge I am continually acquiring on this journey of learning and innovation."; 
 
     return (
         <div className="about-me">
