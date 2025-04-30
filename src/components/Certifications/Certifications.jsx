@@ -58,9 +58,9 @@ export const Certificados = ({ isOriginalText }) => {
     const projectsExcel = [
         {
             title: "Services Request",
-            description: "No projeto Services Request utilizando Power BI, aprendi a transformar dados brutos em insights valiosos por meio de visualizações interativas. Explorei técnicas de importação e modelagem de dados, permitindo a criação de dashboards dinâmicos que facilitam a análise de informações. Aprendi a utilizar recursos como filtros, slicers e gráficos personalizados para apresentar dados de forma clara e concisa. Além disso, desenvolvi habilidades em storytelling com dados, permitindo que as visualizações comuniquem efetivamente as informações e ajudem na tomada de decisões estratégicas.",
+            description: "No projeto Services Request com Power BI, transformei dados brutos em insights por meio de dashboards interativos. Trabalhei com importação, modelagem e visualizações claras usando filtros, slicers e gráficos. Também desenvolvi habilidades em storytelling com dados para apoiar decisões estratégicas.",
             imgUrl: GestãoDeManutençãoComPowerBi,
-            link: "https://media.discordapp.net/attachments/1270360975115292766/1270361024373067850/GestaoDeManutencaoComPowerBi.png?ex=66b36b66&is=66b219e6&hm=8e387116a5f21df74efc95341f87e4865699b53523bbd7901c2062b0d57714cd&=&format=webp&quality=lossless&width=892&height=671"
+            link: null
         },
         {
             title: "Python 3 - Mundo1",

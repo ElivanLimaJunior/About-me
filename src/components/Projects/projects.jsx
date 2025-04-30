@@ -26,7 +26,7 @@
                 title: "Gestão De Manutenção Com Power Bi",
                 description: "Evento online ministrado pela Maintenance intelligence",
                 imgUrl: ServicesRequest,
-                link: "/ProjectPowerBi01"
+                link: "/Projeto01/PowerBi/ProjectPowerBi01"
             },
         ];
 

@@ -888,6 +888,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 /* Projeto Descrição */
 
+/* Estilos existentes... */
+
+/* Adicione estas novas regras no final do arquivo */
+
+/* Projeto Detalhes */
 .project-details {
   background: linear-gradient(90.21deg, #151515 1.41%, #000000 100%);
   color: #fff;
@@ -900,34 +905,43 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   margin-bottom: 20px;
 }
 
-.project-image-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  background-color: #000; /* Define o fundo como preto */
-}
-
-.project-image,
-.project-image-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  padding-bottom: 56.25%; /* Mantém a proporção de 16:9 */
-  height: 0;
-  background: linear-gradient(90.21deg, #151515 1.41%, #000000 100%); /* Gradiente preto */
-}
-
 .project-description {
   font-size: 1.2rem;
   margin-bottom: 30px;
   line-height: 1.6;
+}
+
+.project-visualization {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.project-iframe-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.project-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.project-mobile-image {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
 }
 
 .project-link-btn {
@@ -946,15 +960,25 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   color: #000;
 }
 
-.project-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-  object-fit: cover;
-  background-color: #000;  /* Cor de fundo preto */
-  border: none;  /* Removendo bordas brancas ao redor do iframe */
+/* Media query para mobile */
+@media (max-width: 768px) {
+  .project-mobile-image {
+    display: block;
+  }
+  
+  .project-iframe-wrapper {
+    display: none;
+  }
+  
+  .project-details {
+    padding: 160px 0;
+  }
+  
+  .project-title {
+    font-size: 2rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+  }
 }
